@@ -271,14 +271,19 @@
             </div>
 
             <!-- Kanan -->
-            <div class="col-lg-6">
-    <div class="video-profil">
-        <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-lg bg-dark">
-            <video controls class="w-100 h-100">
-                <source src="videopu.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
+            <video controls class="w-100 h-100"
+       poster="gedung.jpg"
+       onerror="this.style.display='none';document.getElementById('yt').style.display='block';">
+    <source src="videopu.mp4" type="video/mp4">
+</video>
+
+<div id="yt" style="display:none;">
+    <iframe
+        src="https://www.youtube.com/embed/ID_VIDEO"
+        allowfullscreen
+        class="w-100"
+        style="aspect-ratio:16/9;border:0;">
+    </iframe>
 </div>
             </div>
 
